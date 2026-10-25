@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito agoodshop</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <header class="cabecera">
+    <div class="logo">
+      <span class="logo-icono">a</span>
+      <span>agoodshop</span>
+    </div>
+    <div class="cabecera-carrito" title="Unidades en el carrito">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 8h14l-1 12H6L5 8z"></path>
+        <path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
+      </svg>
+      <span id="contador-unidades">0</span>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <h1>Tu carrito</h1>
+
+    <div class="disposicion">
+      <div id="lista-productos" class="lista">Cargando productos...</div>
+
+      <aside class="resumen">
+        <h2>Resumen</h2>
+        <div class="resumen-linea">
+          <span>Artículos</span>
+          <span id="resumen-unidades">0</span>
+        </div>
+        <div class="total-box">
+          <span class="total-etiqueta">Total</span>
+          <span class="total-valor"><span id="precio-total">0.00</span> <span id="moneda"></span></span>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="src/productos-respaldo.js"></script>
+  <script src="src/carrito.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>
